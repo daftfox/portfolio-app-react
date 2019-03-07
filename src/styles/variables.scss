@@ -1,0 +1,47 @@
+// palette
+$color--primary: #ffab40;
+$color--secondary: #cf4040;
+
+$background-color--primary: #424242;
+$background-color--secondary: #313131;
+
+// defaults
+$text-color--default: #ececec;
+
+// shadows
+$shadow-l-1: 0 5px 15px 5px rgba(black, .2);
+
+// header + splash
+$header--height: 4rem;
+$header--background-color: $background-color--secondary;
+$header--text-color: $text-color--default;
+
+$header--collapse-animation-duration: 700ms;
+$header--splash-animation-duration: 2800ms;
+
+// footer
+$footer--height: 1.5rem;
+$footer--background-color: $background-color--secondary;
+$footer--text-color: $text-color--default;
+
+// About
+$about--background-color: $color--primary;
+$about--font-size: 2em;
+$about-title--font-size: 3em;
+$about-subtitle--font-size: 1em;
+$about-content--font-size: .7em;
+
+// Soft skills
+$softskills--background-color: $color--primary;
+$softskills-base--font-size: 2rem;
+$softskills-title--font-size: 2em;
+$softskills-subtitle--font-size: 1em;
+$softskills-content--font-size: .7em;
+
+// Hard skills
+$hardskills--background-color: $color--primary;
+$hardskills-base--font-size: 2rem;
+$hardskills-title--font-size: 2em;
+$hardskills-subtitle--font-size: 1em;
+$hardskills-content--font-size: .7em;
+$hardskills-skill-label--font-size: .5em;

@@ -1,0 +1,13 @@
+.cover-image {
+  background-position: 100% 0;
+  background-size: cover;
+
+  box-shadow: -2px 0 15px 5px rgba(black, .2);
+}
+
+.rounded {
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  border: 1px solid $color--primary;
+}

@@ -1,0 +1,33 @@
+.peculiarity {
+  display: flex;
+  grid-gap: 1em;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .peculiarity-description {
+    margin-top: 1em;
+    font-size: 1.4em;
+    line-height: 1.7;
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:last-child{
+    margin-top: 3em;
+  }
+}
+
+.peculiarity-icon {
+  font-size: 5em;
+  color: white;
+  transform: rotate(-7deg);
+  text-shadow: 2px 2px 10px rgba(black, .4);
+}
+
+@for $i from 1 through 10 {
+  .peculiarity:nth-child(#{$i}n) {
+    animation-delay: #{$i * 0.2}s;
+  }
+}

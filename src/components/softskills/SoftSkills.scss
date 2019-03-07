@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+
+.softskills {
+  color: #222;
+  background-color: $color--primary;
+
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: $softskills-base--font-size;
+}
+
+.softskills-content {
+  padding: 4em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.7;
+
+  p {
+    margin-top: 1em;
+    font-size: $softskills-content--font-size;
+  }
+}
+
+.softskills-cover {
+  //background-image: url('./images/timothy-claassens-landscape.jpg');
+}
+
+.softskills-content-title {
+  font-size: $softskills-title--font-size;
+  text-align: center;
+}
+
+.softskills-content-subtitle {
+  font-size: $softskills-subtitle--font-size;
+}
+
+@media screen and (max-width: 768px) {
+  .softskills-content-title {
+    font-size: calc(#{$softskills-title--font-size} / .6);
+  }
+  .softskills-content-subtitle {
+    font-size: calc(#{$softskills-subtitle--font-size} / .6);
+  }
+  .about-content p {
+    font-size: calc(#{$about-content--font-size} * 1.2);
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cover" "content";
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .softskills-content-title {
+    font-size: calc(#{$softskills-title--font-size} / .8);
+  }
+  .softskills-content-subtitle {
+    font-size: calc(#{$softskills-subtitle--font-size} / .8);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .softskills-content-title {
+    font-size: calc(#{$softskills-title--font-size} / 1);
+  }
+  .softskills-content-subtitle {
+    font-size: calc(#{$softskills-subtitle--font-size} / 1);
+  }
+}

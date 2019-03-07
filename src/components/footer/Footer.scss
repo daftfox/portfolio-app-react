@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+@import '../../styles/animations';
+
+.app-footer {
+  height: $footer--height;
+  color: $footer--text-color;
+  background-color: $footer--background-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: .8em;
+}
+
+.app-footer-icon {
+  margin-left: .5em;
+}
+
+.availability {
+  color: $color--primary;
+  font-weight: bold;
+  margin: 0 .5em;
+  animation: pulse 3000ms ease-in-out infinite;
+}

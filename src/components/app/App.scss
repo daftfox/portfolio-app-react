@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.app {
+  background-color: $background-color--primary;
+  padding-bottom: $footer--height;
+  width: 100vw;
+  //height: 100vh;
+}
+
+.app-content {
+  margin-top: $header--height;
+  //height: calc(100vh - #{$header--height} - #{$footer--height});
+}
+
+.app-footer {
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

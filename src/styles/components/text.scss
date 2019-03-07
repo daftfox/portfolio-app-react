@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700');
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1.highlight {
+  color: $color--primary;
+}
+
+span,
+code {
+  &.highlight {
+    color: $color--primary;
+  }
+}
+
+a:link,
+a:visited,
+a:active {
+  color: $text-color--default;
+  transition: color 100ms ease-in-out;
+}
+
+a:hover {
+  color: $color--primary
+}
+
+.badge {
+  color: #222;
+  font-size: .8em;
+  border-radius: 50%;
+  background-color: $color--primary;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: .7em;
+  }
+}

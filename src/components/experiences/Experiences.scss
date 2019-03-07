@@ -1,0 +1,103 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.experiences {
+  color: #222;
+  background-color: white;
+  padding: 8em 5em;
+  text-align: center;
+}
+
+.experiences-content-title {
+  align-self: flex-start;
+  font-size: 3em;
+}
+
+.experiences-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.experience-timeline {
+  max-width: initial;
+  width: 100%;
+
+  &::before {
+    background: #ffab40;
+  }
+}
+
+.experience-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience {
+  text-align: left;
+  color: $text-color--default;
+
+  &:nth-child(odd){
+    .vertical-timeline-element-content::before {
+      border-left-color: $background-color--primary!important;
+    }
+
+    .vertical-timeline-element-date {
+      top: -20px!important;
+    }
+  }
+  &:nth-child(even){
+    .vertical-timeline-element-content::before {
+      border-right-color: $background-color--primary!important;
+    }
+
+    .vertical-timeline-element-date {
+      top: -20px!important;
+    }
+  }
+}
+
+.vertical-timeline-element-content {
+  border-top: 10px solid $color--primary;
+  background-color: $background-color--primary;
+  box-shadow: $shadow-l-1;
+}
+
+.experience .experience-description {
+  color: $text-color--default;
+  line-height: 1.7;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #ffab40, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+}
+
+.vertical-timeline-element-date {
+  font-size: 2em!important;
+}
+
+.experience .experience-name {
+  font-size: 2em;
+  color: $text-color--default;
+}
+
+.experience-products{
+  margin-top: 1em;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.experience-products-title {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    color: white!important;
+  }
+  .vertical-timeline-element-content::before {
+    border-right-color: $background-color--primary!important;
+    border-left: none!important;
+  }
+}
